@@ -21,8 +21,17 @@ def drawWithWhile(N, M):
 
 def drawWithFor(W, H):
     print("Printing with For Loop")
+    for currRow in range(1, H+1):
+        if (currRow == 1 or currRow == H):
+            print(W * "*")
+        else:
+            for currCol in range(1, W+1):
+                if (currCol == 1 or currCol == W):
+                    print("*", end="")
+                else:
+                    print(" ", end="")
+            print("")
     
-
 def main():
     N = int(input("please insert the width of the rectangle"))
     M = int(input("please insert the height of the rectangle"))
