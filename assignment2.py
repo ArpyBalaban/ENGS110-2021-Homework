@@ -1,5 +1,5 @@
 def nthFibonacci(age):
-        if(age <= 100 or age >=2):
+        if(age <= 100 and age >=2):
             n1 = 0
             n2 = 1
             Sum = 0
@@ -26,7 +26,6 @@ def isPrime(ans):
 def toBinary(age):
     binary = [0,0,0,0,0,0,0,0]
     i = len(binary)-1
-    print(binary[i])
     while(age > 0):
         binary[i] = age%2
         i-=1
