@@ -34,11 +34,15 @@ def toBinary(age):
 
 def main():
     while (True):
-        N = int(input("Enter your age: "))
-        if(nthFibonacci(N) != 1):
-            isPrime(N)
-            toBinary(N)
-            print("Thanks, bye!")
-            break
+        N = input("Enter your age: ")
+        if(N.isnumeric()):
+            N =int(N)
+            if(nthFibonacci(N) != 1):
+                isPrime(N)
+                toBinary(N)
+                print("Thanks, bye!")
+                break
+        else:
+            print("please enter a numeral. ")
 
 main()
