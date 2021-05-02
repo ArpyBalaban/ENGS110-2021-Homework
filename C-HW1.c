@@ -2,88 +2,27 @@
 
 #include <stdlib.h>
 
+#include <math.h>
 
 
-int power(double base, double exponent)
-
+void toBinary (int n)
 {
-
-	int i = 0;
-
-	int result = 1;
-
-
-	while (i < exponent)
-
+	unsigned long bin = 8*sizeof(int);
+	bin--;
+	bin =pow(2,bin);
+	while(n !=0)
 	{
-
-		result *=base;
-
-		i++;
-
-	}
-
-	return (result);
-
-}
-
-
-
-void decimal_to_binary(int decimal ){
-
-
-
-	char input_bits[50];
-
-
-
-	printf("How many bit representation: ");
-
-	scanf("%s", input_bits);
-
-
-
-	int bits = atoi(input_bits);
-
-
-
-	int values = power(2, bits - 1);
-
-	while (values > 0)
-
-	{
-
-		values = power(2, bits - 1);
-
-
-
-		if (values > decimal)
-
+		if((n&bin) ==0)
 		{
-
 			printf("0");
-
 		}
-
 		else
-
 		{
-
 			printf("1");
-
-			decimal = decimal - values;
-
 		}
-
-		values = values - (2^bits);
-
-		bits--;
-
+		n = n<<1;
 	}
-
 }
-
-
 
 int main(void)
 
@@ -115,7 +54,7 @@ while ( b < age){
 
 printf ( "Result : %d \n", sum);
 
-decimal_to_binary(sum);
+toBinary(sum);
 
 printf ("\n");
 
