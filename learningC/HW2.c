@@ -16,6 +16,8 @@ int main (void)
       		exit(1);
    	}
 
+	fscanf(fp,"%d" ,ptr );
+
 	while(fscanf(fp,"%d" ,ptr ) != EOF )
 	{
 		printf("%d \n", *ptr);
