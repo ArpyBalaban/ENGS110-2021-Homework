@@ -1,0 +1,42 @@
+Homework 1
+
+question1
+	char = 1 byte , 1byte = 8 bits 
+	Therefor 2^8 possible charecters.
+
+question2
+	4
+	3
+	2
+	1
+	0
+
+question3
+	No
+
+question4
+	Yes
+
+question5
+	8
+
+question6
+	even
+
+question7
+	sizeof(int)=4, sizeof(x)=20
+
+question8
+	0
+	1
+	2
+	3
+	4
+	5
+	6
+
+question9
+	x=4, y=5
+
+question10
+	Yes.
