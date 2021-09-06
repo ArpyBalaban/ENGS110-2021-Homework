@@ -1,0 +1,2 @@
+Complexity is O(5n^2 + 2n)
+Which simplifies to O(n^2)
